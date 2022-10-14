@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #2da3da 100%);
+  overflow: hidden;
+}
+
+#stars {
+  background-image: url(https://flevix.com/wp-content/uploads/2020/01/Web-Header-Background-1.svg);
+}
+
+
+#discord {
+  display: block;
+}
+
+#title {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 250;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+#title span {
+  background: -webkit-linear-gradient(#FFAAAA, #2d72da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+}
