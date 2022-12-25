@@ -6,4 +6,4 @@ written primery in HTML and a bit of CSS
 
  🐦 dont juge it may not be the best quallity  🐦
 
-# Website: Weylyn.net (https://Weylyn.net/)
+# Website: Weylyn.net(https://Weylyn.net/)
