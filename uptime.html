@@ -4,7 +4,7 @@
     <script>
       function checkServerStatus() {
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://weylyn.net", false);
+        xhr.open("GET", "https://status.weylyn.net", false);
         xhr.onreadystatechange = function() {
           if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
