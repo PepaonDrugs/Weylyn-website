@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function checkServerStatus() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "stats.weylyn.net", true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              document.getElementById("server-status").innerHTML = "Server is online";
+            } else {
+              document.getElementById("server-status").innerHTML = "Server is offline";
+            }
+          }
+        };
+        xhr.send();
+      }
+    </script>
+  </head>
+  <body onload="checkServerStatus()">
+    <div id="server-status"></div>
+  </body>
+</html>
