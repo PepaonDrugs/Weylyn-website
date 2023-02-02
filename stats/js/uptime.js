@@ -1,6 +1,6 @@
 function check_available(ip){
   var el=document.getElementById("check_pic");
-  el.src="https://status.weylyn.net/upload/logo1.png?now="+Math.random();
+  el.src="http://147.185.221.212:5346/upload/logo1.png?now="+Math.random();
   var varible = 1;
 }
 
