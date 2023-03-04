@@ -17,6 +17,19 @@
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	
 	<script src="js/dist-mc-player-counter.min.js"></script>  
+	<!-- Darkmode -->
+    <script>
+		if (
+		  localStorage.getItem("color-mode") === "dark" ||
+		  (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+			!localStorage.getItem("color-mode"))
+		) {
+		  document.documentElement.setAttribute("color-mode", "dark");
+		}
+	  </script>
+	<link rel="stylesheet" href="css/main.css" />
+
+
           
 	<title>
 		GeeksforGeeks icon
@@ -27,7 +40,10 @@
 "https://weylyn.net/images/weylyn-logo.png" 
 	type = "image/x-icon">
 	  
+
 </head>
+
+
   
 <body>
 	<h1 style = "color:rgba(163, 37, 236, 0.993);">
@@ -41,19 +57,26 @@
 <body>
 	
 <body>
+
 	<div id="wiki">
 	<span class="cd-intro">
 		<h1 class="cd-headline clip is-full-width">
+			<font size="8">
 			<span>Selfhost</span>
 			<span class="cd-words-wrapper">
 				<b class="is-visible">Servers</b>
 				<b class="">Passwordmanagers</b>
 				<b>Gameservers</b>
 			    <b>Everything</b>
+			</font>
 			</span>
 		</h1>
 	</div>
-		
+
+
+
+
+
 <div id="stars"></div>
 <div id="stars2"></div>
 <div id="stars3"></div>
@@ -67,46 +90,63 @@
   text-shadow: 0 0 5px #000;
 }
 
-@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+
+
+
+
 </style>
+<link rel="stylesheet" href="css/snow.css" />
 <div class="snowflakes" aria-hidden="true">
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❆
-  </div>
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❆
-  </div>
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❆
-  </div>
-  <div class="snowflake">
-    ❅
-  </div>
-  <div class="snowflake">
-    ❆
-  </div>
-  <div class="snowflake">
-    ❅
-  </div>
-  <div class="snowflake">
-    ❆
-  </div>
-  <div class="snowflake">
-    ❅
-  </div>
-  <div class="snowflake">
-    ❆
-  </div>
+  <div class="snowflake">  ❅  </div>  <div class="snowflake"> ❆  </div>  <div class="snowflake">  ❅  </div>  <div class="snowflake">  ❆  </div>
+  <div class="snowflake">  ❅  </div>  <div class="snowflake">  ❆  </div>  <div class="snowflake">    ❅  </div>  <div class="snowflake">    ❆  </div>
+  <div class="snowflake">    ❅  </div>  <div class="snowflake">    ❆  </div>  <div class="snowflake">    ❅  </div>  <div class="snowflake">    ❆  </div>
 </div>
+
+<svg style="display: none;">
+	<symbol viewBox="0 0 24 24" id="moon">
+	  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+	</symbol>
+	<symbol viewBox="0 0 24 24" id="sun">
+	  <circle cx="12" cy="12" r="5"></circle>
+	  <line x1="12" y1="1" x2="12" y2="3"></line>
+	  <line x1="12" y1="21" x2="12" y2="23"></line>
+	  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+	  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+	  <line x1="1" y1="12" x2="3" y2="12"></line>
+	  <line x1="21" y1="12" x2="23" y2="12"></line>
+	  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+	  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+	</symbol>
+  </svg>
+  <main class="color-mode">
+	<section class="color-mode__section">
+	  <header class="color-mode__header">
+		<button
+		  class="color-mode__btn light--hidden"
+		  aria-label="Toggle light mode"
+		>
+		   Light Mode
+		  <svg aria-hidden="true">
+			<title>Light Mode</title>
+			<use href="#sun"></use>
+		  </svg>
+		</button>
+		<button
+		  class="color-mode__btn dark--hidden"
+		  aria-label="Toggle dark mode"
+		>
+		   Dark Mode
+		  <svg aria-hidden="true">
+			<title>Dark Mode</title>
+			<use href="#moon"></use>
+		  </svg>
+		</button>
+	  </header>
+
+
+
+
+
 
   <span>
     WEYLYN.NET <img width="66" height="60" src="images/cmd.webp" alt="CMD" title="CMD">
@@ -123,16 +163,19 @@
   <div id="wiki">
   	<a style="text-decoration: none;" href="http://status.weylyn.net/status">
 		<span>Status</span>
+		<br>
 		<img width="60" height="60" src="images/uptime.png" alt="Wiki" title="Wiki">
 	</a>
   <div id="wiki">
   	<a style="text-decoration: none;" href="https://weylyn.net/projects">
 		<span>Projects</span>
+		<br>
 		<img width="60" height="60" src="images/docker.png" alt="Wiki" title="Wiki">
 	</a>
 	<div id="wiki">
 		<a style="text-decoration: none;" href="https://weylyn.net/games/">
 		  <span>Games</span>
+		  <br>
 		  <img width="60" height="60" src="images/flappybird.png" alt="Wiki" title="Wiki">
 		  
   </div>
@@ -153,7 +196,9 @@
 	</a>
   </div>
 </div>
+
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/mode.js"></script>
 </body>
 </html>
