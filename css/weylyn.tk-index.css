@@ -83,6 +83,10 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+#rest {
+  font-size: 1rem;
+}
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
