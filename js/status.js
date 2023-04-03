@@ -1,5 +1,5 @@
 
-var url = "https://api.minetools.eu/ping/weylyn.net";  
+var url = "https://api.minetools.eu/ping/147.185.221.223/29628";  
 $.getJSON(url, function(r) {
   //data is the JSON string
   if (r.error) {
