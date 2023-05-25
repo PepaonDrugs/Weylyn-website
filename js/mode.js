@@ -20,6 +20,10 @@ if (window.CSS && CSS.supports("color", "var(--primary)")) {
   toggleColorButtons.forEach(function(btn) {
     btn.addEventListener("click", toggleColorMode);
   });
+
+  // Set the default mode to dark
+  document.documentElement.setAttribute("color-mode", "dark");
+  localStorage.setItem("color-mode", "dark");
 } else {
   // If the feature isn't supported, then we hide the toggle buttons
   var btnContainer = document.querySelector(".color-mode__header");
