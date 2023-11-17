@@ -4,7 +4,7 @@ function checkWebsiteStatus() {
     const statusIconElement = document.getElementById('statusIcon');
     
     // Using a proxy to bypass CORS restrictions
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/' + url;
+    const proxyUrl = 'https://corsproxy.io/?' + url;
 
     fetch(proxyUrl)
       .then(response => {
