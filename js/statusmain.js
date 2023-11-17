@@ -25,5 +25,3 @@ function checkWebsiteStatus() {
   // Check website status initially
   checkWebsiteStatus();
 
-  // Automatically check every 15 seconds
-  setInterval(checkWebsiteStatus, 15000);
